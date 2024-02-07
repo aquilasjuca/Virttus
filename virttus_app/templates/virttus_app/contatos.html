@@ -1,0 +1,40 @@
+{% include 'virttus_app/base.html' %}
+
+{% load static %}
+
+{% block cabecalho %}
+    <link rel="stylesheet" href="{% static 'virttus_app/contatos/css/contatos.css' %}">
+{% endblock cabecalho %}
+
+{% block conteudo %}
+<main>
+    <section class="topo-do-site">
+        <div class="interface">
+            <div class="flex">
+                <div class="instagram">
+                    <a href="https://www.instagram.com/virttusodontologia/" target="_blank">
+                        <img src="{% static 'virttus_app/contatos/img/instagram.png' %}" alt="Logo instagram">
+                        <p>@virttusodontologia</p>
+                    </a>
+                </div>
+
+                <div class="whatsapp">
+                    <a href="https://l.instagram.com/?u=https%3A%2F%2Fwa.me%2Fmessage%2F4GN546MZQNR5D1&e=AT2Wnq5ikPj6bp_E-4tRTVPDnqoyEmrdmAbzdQRl2_0r6XAssmWuS9VFJa6SXztGlTQQymDuFTcSJ3zkQDGAFBGcKG4waG0e2jjNnSu-14MtME7Ff2FggQ" target="_blank">
+                        <img src="{% static 'virttus_app/contatos/img/whatsapp.png' %}" alt="Logo whatsapp">
+                        <p class="whatsapp-number">+55 (88) 9.9224-3460</p>
+                    </a>
+                </div>
+                
+                <div class="facebook">
+                    <a href="https://www.facebook.com/profile.php?id=61554605363159" target="_blank">
+                        <img src="{% static 'virttus_app/contatos/img/facebook.png' %}" alt="Logo facebook">
+                        <p>Virttus Odontologia</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+{% endblock conteudo %}
+
+</html>

@@ -1,0 +1,30 @@
+{% include "virttus_app/base.html" %}
+
+{% load static %}
+
+{% block cabecalho %}
+    <link rel="stylesheet" href="{% static 'virttus_app/inicio/css/inicio.css' %}">
+{% endblock %}
+
+{% block 'conteudo' %}
+    <main>
+        <section class="topo-do-site">
+            <div class="interface">
+                <div class="flex">
+                    <div class="txt-topo-site">
+                        <h1>Seja bem-vindo(a)!</h1>
+                        <p>Na Clínica Virttus, dedicamo-nos ao seu bem-estar, oferecendo cuidado personalizado e
+                            serviços excelentes. Com profissionais qualificados, asseguramos uma experiência única,
+                            unindo qualidade e atenção para promover sua saúde integralmente.</p>
+                    </div>
+
+                    <div class="img-topo-site">
+                        <img src="{% static 'virttus_app/inicio/img/virttus_logo.jpg' %}" alt="Logo da Clínica Virttus">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+{% endblock 'conteudo' %}
+
+</html>

@@ -1,0 +1,91 @@
+main {
+    width: 100%;
+    text-align: center;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+    animation: slideIn 1.0s ease-out;
+    border: 2px solid #f6f0a6;
+    border-radius: 20px;
+    padding: 60px;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.topo-do-site {
+    padding: 40px 4%;
+    margin-top: 40px;
+}
+
+.maps {
+    padding: 40px;
+    transform: scale(1.05);
+}
+
+.maps img {
+    width: 150px;
+    height: 150px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.maps:hover img {
+    transform: scale(1.1);
+}
+
+.maps a {
+    text-decoration: none;
+}
+
+.maps p {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-size: 30px;
+    color: #f6f0a6;
+    text-decoration: none;
+    font-weight: 500;
+    transition: .2s;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.maps:hover p {
+    color: #00abf0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+    transform: scale(1.05);
+}
+
+.maps p.rua {
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 25px;
+}
+
+@media screen and (max-width: 1380px) {
+    .flex {
+        flex-direction: column-reverse;
+    }
+
+    .topo-do-site {
+        margin-top: 0px;
+        padding-top: 0%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .flex {
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+}

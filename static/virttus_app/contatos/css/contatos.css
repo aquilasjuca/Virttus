@@ -1,0 +1,85 @@
+main {
+    width: 100%;
+    text-align: center;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+    animation: slideIn 1.0s ease-out;
+    border: 2px solid #f6f0a6;
+    border-radius: 20px;
+    padding: 60px;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.topo-do-site {
+    padding: 40px 4%;
+    margin-top: 40px;
+}
+
+.instagram,
+.whatsapp,
+.facebook {
+    padding: 25px;
+    transform: scale(1.05);
+}
+
+.instagram img,
+.whatsapp img,
+.facebook img {
+    width: 150px;
+    height: 150px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.instagram:hover img,
+.whatsapp:hover img,
+.facebook:hover img {
+    transform: scale(1.1);
+}
+
+.instagram a,
+.whatsapp a,
+.facebook a {
+    text-decoration: none;
+}
+
+.instagram p,
+.whatsapp p,
+.facebook p {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-size: 30px;
+    color: #f6f0a6;
+    text-decoration: none;
+    font-weight: 500;
+    transition: .2s;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.instagram:hover p,
+.whatsapp:hover p,
+.facebook:hover p {
+    color: #00abf0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+    transform: scale(1.05);
+} 
+
+.whatsapp p.whatsapp-number {
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 25px;
+}
