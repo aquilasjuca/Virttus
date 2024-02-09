@@ -1,5 +1,85 @@
-@media screen and (max-width: 1480px) {
+main {
+    width: 100%;
+    text-align: center;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+    animation: slideIn 1.0s ease-out;
+    border: 2px solid #f6f0a6;
+    border-radius: 20px;
+    padding: 60px;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.topo-do-site {
+    padding: 40px 4%;
+    margin-top: 60px;
+}
+
+.profissional {
+    display: flex;
+    align-items: center;
+    border: 2px solid #f6f0a6;
+    border-radius: 40px;
+    padding: 20px;
+}
+
+.profissional img {
+    width: 250px;
+    height: auto;
+    margin-right: 20px;
+    border-radius: 30px;
+}
+
+.profissional h1 {
+    font-size: 22px;
+    padding-right: 6px;
+    color: #f6f0a6;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+}
+
+@media screen and (max-width: 1380px) {
     .flex {
         flex-direction: column-reverse;
+        padding: 12%;
+    }
+
+    .topo-do-site {
+        margin-top: 0px;
+        padding-top: 0%;
+    }
+
+    .profissional {
+        flex-direction: column;
+        border: none;
+    }
+
+    .profissional h1 {
+        font-size: 18px;
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .flex {
+        padding-right: 10px;
+        padding-left: 10px;
     }
 }
