@@ -1,6 +1,6 @@
 # Clínica Virttus.
 
-Protótipo de site para a Clínica Virttus usando o framework Django.
+Protótipo web para a Clínica Virttus usando o framework Django.
 
 # Como rodar:
 
